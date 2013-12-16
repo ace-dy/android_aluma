@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aluma.Aluma"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <activity
+            android:name="com.aluma.Aluma.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.aluma.Aluma.ConditionOfSalesActivity" >
+        </activity>
+        <activity
+            android:name="com.aluma.Aluma.CustomerListActivity"
+            android:label="@string/title_activity_customer_list"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.aluma.Aluma.TransactionActivity"
+            android:label="@string/title_activity_transaction" >
+        </activity>
+        <activity
+            android:name="com.aluma.Aluma.GridConditionActivity"
+            android:label="@string/title_activity_grid_condition" >
+        </activity>
+        <activity
+            android:name="com.aluma.Aluma.GridTransactionActivity"
+            android:label="@string/title_activity_grid_transaction" >
+        </activity>
+        <activity
+            android:name="com.aluma.Aluma.SaleActivity"
+            android:label="@string/title_activity_sale"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.aluma.Aluma.ChangeCustomerInfoActivity"
+            android:label="@layout/activity_changecustomerinfo" >
+        </activity>
+        <activity
+            android:name="com.aluma.Aluma.AddCustomerActivity"
+            android:label="@string/title_activity_add_customer"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+    </application>
+
+</manifest>
